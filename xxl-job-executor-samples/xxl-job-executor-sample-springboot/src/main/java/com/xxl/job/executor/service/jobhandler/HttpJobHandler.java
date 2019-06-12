@@ -36,7 +36,7 @@ public class HttpJobHandler extends IJobHandler {
             connection.setDoOutput(true);
             connection.setDoInput(true);
             connection.setUseCaches(false);
-            connection.setReadTimeout(5 * 1000);
+            connection.setReadTimeout(3600 * 1000);
             connection.setConnectTimeout(3 * 1000);
             connection.setRequestProperty("connection", "Keep-Alive");
             connection.setRequestProperty("Content-Type", "application/json;charset=UTF-8");
